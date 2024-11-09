@@ -7,7 +7,7 @@ read nome
 
 while true; do
 if [ ${#nome} -lt 2 ]; then
-    echo "O nome precisa ter pelo menos 2 caracteres. Por favor, digite novamente:"
+    echo "O nome precisa ter pelo menos 2 caracteres e não pode ser nulo. Por favor, digite novamente:"
     read nome
 else
     break
