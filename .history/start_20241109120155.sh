@@ -6,7 +6,7 @@ echo "Qual é o seu nome?"
 read nome
 
 while true; do
-if [[ "${#nome}" -lt 2 || ! "$nome" =~ ^[a-zA-Z]+$ ]]; then
+if [[ "${#nome}" -lt 2 ]] &&[[ "$nome" =~ ^[a-zA-Z]+$ ]]; then
     echo "O nome precisa ter pelo menos 2 caracteres, deve conter apenas letras e não pode ser nulo. Por favor, digite novamente:"
     read nome
 else
